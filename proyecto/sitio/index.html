@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guillermo Rodriguez - Desarrollador Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <span class="nav-link" data-nav="inicio">Inicio</span>
+    <span class="nav-link" data-nav="portafolio">Portafolio</span>
+  </div>
+  <div class="nav-logo" data-nav="inicio">Guillermo Rodriguez</div>
+  <div>
+    <span class="nav-link" data-nav="contacto">Contacto</span>
+  </div>
+</nav>
+
+<div class="page active" id="page-inicio">
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="avatar">G</div>
+      <span class="hero-tag">Disponible para proyectos - 2025</span>
+      <h1 class="hero-title">Hola, soy<br>Guillermo Rodriguez</h1>
+      <p class="hero-subtitle">Desarrollador Web / Front-end</p>
+      <p class="hero-location">Guadalajara, Jalisco, Mexico</p>
+      <div class="hero-actions">
+        <button class="btn-primary" data-nav="portafolio">Ver Portafolio <span>-></span></button>
+        <button class="btn-secondary" data-nav="contacto">Contacto</button>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll</div>
+  </div>
+
+  <section class="text-center">
+    <p class="section-label">Sobre mi</p>
+    <h2 class="section-title">Guillermo Alejandro Rodriguez Salazar</h2>
+    <div class="divider"></div>
+    <p class="about-text">
+      Desarrollador Web / Front-end y estudiante apasionado por construir interfaces limpias,
+      funcionales y bien disenadas. Me interesa resolver problemas reales con codigo ordenado
+      y con criterio visual. Basado en Guadalajara, disponible para proyectos y colaboraciones.
+    </p>
+  </section>
+
+  <section class="text-center pt-0">
+    <p class="section-label">Tecnologias</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-wrap">
+      <span class="skill-chip">C</span>
+      <span class="skill-chip">C++</span>
+      <span class="skill-chip">Python</span>
+      <span class="skill-chip">Java</span>
+      <span class="skill-chip">JavaScript</span>
+      <span class="skill-chip">HTML / CSS</span>
+      <span class="skill-chip">Logica de programacion</span>
+      <span class="skill-chip">Diseno UI</span>
+      <span class="skill-chip">Canva</span>
+      <span class="skill-chip">Office</span>
+      <span class="skill-chip">APIs con Python</span>
+    </div>
+  </section>
+
+  <section class="pt-0">
+    <p class="section-label text-center">Trabajo reciente</p>
+    <h2 class="section-title text-center">Proyectos</h2>
+    <div class="project-list">
+      <div class="project-item" data-nav="portafolio">
+        <span class="proj-num">01</span>
+        <div class="proj-info">
+          <p class="proj-title">Dino Game</p>
+          <p class="proj-desc">Juego de plataformas en JavaScript con fisicas, puntaje y obstaculos aleatorios.</p>
+          <span class="proj-tech">JavaScript</span>
+        </div>
+        <span class="proj-arrow">-></span>
+      </div>
+      <div class="project-item" data-nav="portafolio">
+        <span class="proj-num">02</span>
+        <div class="proj-info">
+          <p class="proj-title">CRUD Cafeteria</p>
+          <p class="proj-desc">Sistema de gestion de pedidos con base de datos, alta/baja/modificacion de productos.</p>
+          <span class="proj-tech">Python / DB</span>
+        </div>
+        <span class="proj-arrow">-></span>
+      </div>
+      <div class="project-item" data-nav="portafolio">
+        <span class="proj-num">03</span>
+        <div class="proj-info">
+          <p class="proj-title">Programas en C</p>
+          <p class="proj-desc">Coleccion de algoritmos y estructuras de datos implementados en C y C++.</p>
+          <span class="proj-tech">C / C++</span>
+        </div>
+        <span class="proj-arrow">-></span>
+      </div>
+      <div class="project-item" data-nav="portafolio">
+        <span class="proj-num">04</span>
+        <div class="proj-info">
+          <p class="proj-title">Paginas con APIs</p>
+          <p class="proj-desc">Aplicaciones web que consumen APIs externas usando Python como backend.</p>
+          <span class="proj-tech">Python / APIs</span>
+        </div>
+        <span class="proj-arrow">-></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>¿Tienes un proyecto o idea?</h2>
+    <p>Disponible para freelance, practicas y colaboraciones.</p>
+    <button class="btn-primary btn-light" data-nav="contacto">Ir a Contacto -></button>
+  </div>
+
+  <footer>© 2025 Guillermo Alejandro Rodriguez Salazar - Guadalajara, Mexico</footer>
+</div>
+
+<div class="page" id="page-portafolio">
+  <div class="portfolio-header">
+    <div class="portfolio-header-inner">
+      <p class="section-label">Trabajo</p>
+      <h1 class="section-title">Mi Portafolio</h1>
+      <p class="muted-text">Proyectos de desarrollo web, logica y diseno</p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="c">C / C++</button>
+      <button class="filter-btn" data-filter="design">Diseno</button>
+    </div>
+  </div>
+
+  <div class="portfolio-grid">
+    <div class="card" data-cat="js">
+      <div class="card-thumb">JS<div class="card-overlay">Ver proyecto</div></div>
+      <div class="card-body">
+        <p class="card-title">Dino Game</p>
+        <p class="card-desc">Juego en JavaScript con fisicas, puntaje y obstaculos aleatorios. Totalmente jugable en el navegador.</p>
+        <span class="proj-tech">JavaScript</span>
+      </div>
+    </div>
+    <div class="card" data-cat="python">
+      <div class="card-thumb">PY<div class="card-overlay">Ver proyecto</div></div>
+      <div class="card-body">
+        <p class="card-title">CRUD Cafeteria</p>
+        <p class="card-desc">Sistema de gestion de pedidos con base de datos. Alta, baja y modificacion de productos y ordenes.</p>
+        <span class="proj-tech">Python / DB</span>
+      </div>
+    </div>
+    <div class="card" data-cat="c">
+      <div class="card-thumb">C<div class="card-overlay">Ver proyecto</div></div>
+      <div class="card-body">
+        <p class="card-title">Programas en C</p>
+        <p class="card-desc">Coleccion de algoritmos y estructuras de datos implementados en C y C++. Listas, arboles, ordenamientos.</p>
+        <span class="proj-tech">C / C++</span>
+      </div>
+    </div>
+    <div class="card" data-cat="python">
+      <div class="card-thumb">API<div class="card-overlay">Ver proyecto</div></div>
+      <div class="card-body">
+        <p class="card-title">Paginas con APIs</p>
+        <p class="card-desc">Aplicaciones web que consumen APIs externas usando Python como backend y HTML/CSS en el frontend.</p>
+        <span class="proj-tech">Python / APIs</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Guillermo Alejandro Rodriguez Salazar - Guadalajara, Mexico</footer>
+</div>
+
+<div class="page" id="page-contacto">
+  <div class="contact-page">
+    <div class="contact-inner">
+      <p class="section-label">Hablemos</p>
+      <h1 class="section-title">¿Hablamos?</h1>
+      <p class="muted-text mb-2">Disponible para colaboraciones - Respondo en menos de 48 hrs</p>
+
+      <div class="success-msg" id="success-msg">Mensaje enviado. Te contactare pronto.</div>
+
+      <div class="form-group">
+        <label>Nombre *</label>
+        <input type="text" value="Guillermo Alejandro Rodriguez Salazar" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" value="memomem1nmem1tome1me1@gmail.com" placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Mensaje *</label>
+        <textarea placeholder="Cuentame sobre tu proyecto o idea..."></textarea>
+      </div>
+
+      <button class="btn-primary btn-full" data-send="true">Enviar mensaje -></button>
+
+      <div class="social-cards">
+        <div class="social-card">
+          <div class="social-card-icon">IG</div>
+          <p class="social-card-label">Instagram</p>
+          <p class="social-card-value">@meimei_rs</p>
+        </div>
+        <div class="social-card">
+          <div class="social-card-icon">GH</div>
+          <p class="social-card-label">GitHub</p>
+          <p class="social-card-value">meimeiOk</p>
+        </div>
+        <div class="social-card">
+          <div class="social-card-icon">EM</div>
+          <p class="social-card-label">Email</p>
+          <p class="social-card-value tiny">memomem1n...</p>
+        </div>
+      </div>
+
+      <div class="availability">Disponible ahora - Guadalajara, Mexico - UTC-6</div>
+    </div>
+  </div>
+  <footer>© 2025 Guillermo Alejandro Rodriguez Salazar - Guadalajara, Mexico</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
